@@ -12,9 +12,9 @@ const logo = () => {
   return (
     <>
         <Link href={'/'}>
-            <div className='hover:opacity-75 transition items-center gap-x-2 hidden md:flex'>
-                <Image src={'../public/logo.png'} alt='Logo' height={30} width={30} />
-                  <p className={cn('text-lg text-neutral-700 pb-1', headingFont.className)}>Taskilio</p>
+            <div className='hover:opacity-75 transition justify-center items-center hidden md:flex'>
+                <Image src={'/logo.png'} alt='Logo' height={40} width={40} />
+                  <p className={cn('text-lg pt-1 text-neutral-700', headingFont.className)}>Taskilio</p>
             </div>
         </Link>
     </>
