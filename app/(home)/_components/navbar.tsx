@@ -1,8 +1,6 @@
-import React from 'react'
 import Logo from '@/components/logo'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
-import { SignIn } from '@/components/sign-in'
 
 const navbar = () => {
   return (
@@ -11,10 +9,10 @@ const navbar = () => {
             <Logo />
             <div className="space-x-4 md:block md:w-auto flex items-center justify-between w-full">
                 <Button size={'sm'} variant={'outline'} asChild>
-                      <Link href={'/sign-in'}>Login</Link>
+                      <Link href={'/auth/login'}>Login</Link>
                 </Button>
                 <Button size={'sm'} asChild>
-                  <Link href={'/sign-in'}>Get Taskilio for Free</Link>
+                  <Link href={'/auth/login'}>Get Taskilio for Free</Link>
                 </Button>
             </div>
         </div>
