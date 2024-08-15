@@ -1,7 +1,9 @@
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import NextAuth from "next-auth";
 import authConfig from "./auth.config";
-import prisma from "./lib/prisma";
+import { PrismaClient } from "@prisma/client";
+
+let prisma = new PrismaClient();
 
 export const {
     handlers: { GET, POST },
@@ -13,7 +15,8 @@ export const {
         signIn: '/auth/login',
         error: '/auth/error',
     },
-    adapter: PrismaAdapter(prisma),
+    // adapter: PrismaAdapter(prisma),
     session: { strategy: "jwt" },
+    secret: process.env.NEXTAUTH_SECRET,
     ...authConfig,
 });
