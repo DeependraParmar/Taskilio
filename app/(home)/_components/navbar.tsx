@@ -9,10 +9,10 @@ const navbar = () => {
             <Logo />
             <div className="space-x-4 md:block md:w-auto flex items-center justify-between w-full">
                 <Button size={'sm'} variant={'outline'} asChild>
-                      <Link href={'/auth/login'}>Login</Link>
+                      <Link href={'/sign-up'}>Login</Link>
                 </Button>
                 <Button size={'sm'} asChild>
-                  <Link href={'/auth/login'}>Get Taskilio for Free</Link>
+                  <Link href={'/sign-in'}>Get Taskilio for Free</Link>
                 </Button>
             </div>
         </div>

@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from './_components/navbar'
 import Footer from './_components/footer'
-import { SignIn } from '@/components/sign-in'
 
 const layout = ({children}: { children: React.ReactNode }) => {
   return (
