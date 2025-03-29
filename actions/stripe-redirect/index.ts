@@ -48,17 +48,17 @@ const handler = async (data: InputType): Promise<ReturnType> => {
         cancel_url: settingsUrl,
         payment_method_types: ["card"],
         mode: "subscription",
-        billing_address_collection: "auto",
+        billing_address_collection: "required",
         customer_email: user.emailAddresses[0].emailAddress,
         line_items: [
           {
             price_data: {
-              currency: "USD",
+              currency: "INR",
               product_data: {
-                name: "Taskify Pro",
+                name: "Taskilio Pro",
                 description: "Unlimited boards for your organization",
               },
-              unit_amount: 2000,
+              unit_amount: 200000,
               recurring: {
                 interval: "month",
               },

@@ -20,8 +20,8 @@ export const Navbar = () => {
           >
             <Link href="/sign-in">Login</Link>
           </Button>
-          <Button size="sm" asChild data-testid="navbar_get_taskify_button">
-            <Link href="/sign-up">Get Taskify for free</Link>
+          <Button size="sm" asChild data-testid="navbar_get_Taskilio_button">
+            <Link href="/sign-up">Get Taskilio for free</Link>
           </Button>
         </div>
       </div>
